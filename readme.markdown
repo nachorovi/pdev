@@ -19,4 +19,3 @@ Don't hesitate to be creative to fix the layout.
 Bonus is making login with Facebook and Google work
 
 The site must be deployed and testable on GAE.
-

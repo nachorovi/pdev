@@ -1,8 +1,8 @@
 html,body { height:100%; }
 body { 
-  min-width: 1060px;
   height: 100%; margin: 0; padding: 0; 
-  background: #F9F9F9 url(../img/furley_bg.png) repeat;
+  background-size: cover;
+  background: #F9F9F9 url(../img/bgblur.png) repeat;
   font-family: "Helvetica Neue", helvetica, arial, sans-serif; 
   color: #555; 
   overflow-y: hidden;
@@ -26,8 +26,6 @@ h2 { font-size: 24px;  line-height: 36px;}
 h3 { line-height: 27px;  font-size: 18px;}
 h4, h5, h6 { line-height: 18px;}
 h6 { font-size: 11px;  color: #999999;  text-transform: uppercase;}
-.thumbnail { background-size: cover; background: url('../img/noprofile2.png') center center; margin: 4px; webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #adb4c5; }
-
 
 /* HEADER STYLES
 -------------------------------------------------------------------------------- */
@@ -35,27 +33,16 @@ header {
 	position: relative; top: 0px; left: 0px; right: 0px;
 	width: 100%; height: 35px;
 	z-index: 3000;
-  background-color:#2c2c2c;
-  background-image:-moz-linear-gradient(top, #444, #000);
-  background-image:-ms-linear-gradient(top, #444, #000);
-  background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#000));
-  background-image:-webkit-linear-gradient(top, #444, #000);
-  background-image:-o-linear-gradient(top, #444, #000);
-  background-image:linear-gradient(top, #444, #000);
-  background-repeat:repeat-x;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF444444', endColorstr='#FF000000', GradientType=0);
+  background: #2c2c2c url(../img/sewn.png) bottom repeat-x;
 }
 header .container {
   padding:0px; width: 960px; margin: 0 auto;
 }
-header #logo a{ 
-  width: 70px; top: 5px;
-  position: relative; left: 20px; 
-  font-family: 'Lucida Grande', helvetica, sans-serif; 
-  font-size: 20px; color: #eee; font-weight: bold; cursor: pointer;
+header #logo{ 
+  background: url(../img/logotype4.png) left center no-repeat; width: 80px; height: 30px;
+  top: 0px; position: relative; left: 25px; cursor: pointer; float: left; display: block;
 }
-header #logo a:hover { 
-  color: #fff; text-decoration: none;
+header #logo:hover { 
 }
 header nav { padding-top: 8px; margin-top: -2px; margin-left: 0px; /*border-left: 1px solid #7A021E;*/ float: right; display: inline; }
 header nav i.cog { margin-top: 4px; z-index: 2060; display: block; float: right; width: 21px; height: 20px; background: url('../img/cog2.png'); }
@@ -86,9 +73,10 @@ padding: 7px 16px 8px;
   padding: 10px;
 }
 #content {
-  background: #F9F9F9; overflow: auto;
-  border: 1px solid #ddd;
-  padding: 60px 15px 20px 15px;
+/*  background: rgba(255, 255, 255, 0.4);*/ overflow: auto;
+/*  border: 1px solid rgba(255, 255, 255, 0.1);*/
+  padding: 15px; margin-top: 10%;
+/*  padding: 60px 15px 20px 15px;*/
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -104,17 +92,78 @@ padding: 7px 16px 8px;
 #signup {
   float: left;
   width: 320px;
-  margin-left: 20px;
-/*  background: #ddd;*/
+  margin-left: 20px; margin-top: 2px;
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .tab-content {
-  height: 230px; margin-top: 0px;
+  height: 225px; margin-top: 0px;
   background: #fff;
   padding: 15px;
+}
+
+/* FOOTER STYLES
+-------------------------------------------------------------------------------- */
+footer {
+  position: fixed; bottom: 0; left: 0; right: 0; height: 30px; background: #1d1d1d;
+  border-top: 3px solid #093F68;
+}
+footer .nav {
+  display: inline;
+  margin-top: 0px;
+}
+footer .nav li{
+	float:left;
+	margin:0 10px 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+footer .nav li a{
+	color:#aaa;
+	text-decoration:none;	
+}
+footer .nav li.divider{
+  font-size:14px;
+	color:#777;
+}
+footer .container { height: 20px; width: 910px;
+  margin: 0 auto; padding: 0px; margin-top: 7px; overflow: hidden;
+}
+footer p {
+  font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px; color: #aaa; float:left;
+  position: absolute; left: 48%; margin-top: 1px;
+}
+#facebook {
+  background: url(../img/icons4.png) no-repeat -1px -2px; margin-top: -2px;
+  width: 22px; height: 22px; display: block; float: right;
+}
+#google {
+  background: url(../img/icons4.png) no-repeat -25px -2px; margin-top: -2px;
+  width: 22px; height: 20px; display: block; float: right; margin-left: 2px;
+}
+#twitter {
+  background: url(../img/icons4.png) no-repeat -49px -2px; margin-top: -2px;
+  width: 22px; height: 20px; display: block; float: right; margin-left: 4px;
+}
+#youtube {
+  background: url(../img/icons4.png) no-repeat -73px -2px; margin-top: -2px;
+  width: 22px; height: 20px; display: block; float: right; margin-left: 6px;
+}
+#facebook:hover {
+  background: url(../img/iconshover2.png) no-repeat -1px -2px;
+}
+#google:hover {
+  background: url(../img/iconshover2.png) no-repeat -25px -2px;
+}
+#twitter:hover {
+  background: url(../img/iconshover2.png) no-repeat -49px -2px;
+}
+#youtube:hover {
+  background: url(../img/iconshover2.png) no-repeat -73px -2px;
 }
 
 
@@ -519,6 +568,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .user-email {
 	background:#fff url(../img/sprite-icons/cs_h.png) no-repeat 5px -615px !important;
+}
+.user-phone {
+	background:#fff url(../img/sprite-icons/cs_h.png) no-repeat 5px -935px !important;
 }
 input[type="radio"], input[type="checkbox"] {
 	margin: 3px 0;
