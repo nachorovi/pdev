@@ -110,20 +110,20 @@ padding: 7px 16px 8px;
   border-radius: 3px;
 }
 .tab-content {
-  height: 225px; margin-top: 0px;
+  height: 235px; margin-top: 0px;
   background: #fff;
-  padding: 15px;
+  padding: 15px; overflow: hidden !important;
 }
 #logintab h4 {
-  width: 90px; height: 150px; margin-top: 25px; color: #666; font-weight: 300;
-  float: left; font-size: 25px; line-height: 27px; margin-left: 14px;
+  width: 90px; height: 90px; margin-top: 28px; color: #666; font-weight: 300;
+  float: left; font-size: 25px; line-height: 27px; margin-left: 20px;
 }
 
 /* FOOTER STYLES
 -------------------------------------------------------------------------------- */
 footer {
   position: fixed; bottom: 0; left: 0; right: 0; height: 30px; background: #1d1d1d;
-  border-top: 3px solid #093F68;
+  border-top: 3px solid #093F68; z-index: 3000;
 }
 footer .nav {
   display: inline;
@@ -251,6 +251,7 @@ footer p {
   margin-bottom: 0px;
   list-style: none;
   padding-left: 7px;
+  margin-top: 5px;
 }
 .nav > li > a {
   display: block;
@@ -579,7 +580,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	display: inline-block;
 	height: 24px;
 	padding: 4px; padding-left: 28px;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
   font-size: 13px;
 	line-height: 18px;
 	color: #555555;
