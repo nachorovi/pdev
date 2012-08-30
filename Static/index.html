@@ -9,9 +9,6 @@
 <meta name="author" content="Josh Pickett - 27percent">
 <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/c/video.js"></script>
-<!-- styles -->
-<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
-<!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
 <!-- <link href="css/styles.css" rel="stylesheet"> -->
 <!--[if IE 7]>
@@ -52,20 +49,26 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="signuptab">
-          <input type="text" placeholder="First name Last name" class="login-input user-name">
-          <input type="text" placeholder="Email" class="login-input user-email">
-          <input type="text" placeholder="Phone number" class="login-input user-phone">
-          <input type="text" placeholder="Password" class="login-input user-pass">
+          <form method="post" action="/signup">
+          <input type="text" name="firstname" placeholder="First name Last name" class="login-input user-name">
+          <input type="text" name="email" placeholder="Email" class="login-input user-email">
+          <input type="text" name="mobile" placeholder="Phone number" class="login-input user-phone">
+          <input type="text" name="password" placeholder="Password" class="login-input user-pass">
           <div class="clearfix">
           <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
+          </form>
           </div>
         </div>
         <div class="tab-pane" id="logintab">
           <input type="text" placeholder="Email" class="login-input user-email">
           <input type="text" placeholder="Password" class="login-input user-pass">
           <div class="clearfix">
-          <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
+          <button class="btn btn-primary login-btn" type="submit"> Sign in</button>
           </div>
+          <h4>Or sign in with:</h4>
+          <div id="facebooksignin"></div>
+          <div id="twittersignin"></div>
+          <div id="linkedinsignin"></div>
         </div>
       </div>
     </div>
@@ -93,59 +96,7 @@
   <a href="#" id="facebook"></a>
 </div>
 </footer>
-
-
-<!-- javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
-<!-- <script src="js/jquery-ui-1.8.16.custom.min.js"></script> -->
 <script src="js/bootstrap.js"></script>
-<!-- <script src="js/prettify.js"></script>
-<script src="js/jquery.sparkline.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/accordion.jquery.js"></script>
-<script src="js/smart-wizard.jquery.js"></script>
-<script src="js/vaidation.jquery.js"></script>
-<script src="js/jquery-dynamic-form.js"></script>
-<script src="js/fullcalendar.js"></script>
-<script src="js/raty.jquery.js"></script>
-<script src="js/jquery.noty.js"></script>
-<script src="js/jquery.cleditor.min.js"></script>
-<script src="js/data-table.jquery.js"></script>
-<script src="js/TableTools.min.js"></script>
-<script src="js/ColVis.min.js"></script>
-<script src="js/plupload.full.js"></script>
-<script src="js/elfinder/elfinder.min.js"></script>
-<script src="js/chosen.jquery.js"></script>
-<script src="js/uniform.jquery.js"></script>
-<script src="js/jquery.tagsinput.js"></script>
-<script src="js/jquery.colorbox-min.js"></script>
-<script src="js/check-all.jquery.js"></script>
-<script src="js/inputmask.jquery.js"></script> -->
-<!-- <script src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script> -->
-<!-- <script src="js/plupupload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
-<script src="js/excanvas.min.js"></script>
-<script src="js/jquery.jqplot.min.js"></script>
-<script src="js/chart/jqplot.highlighter.min.js"></script>
-<script src="js/chart/jqplot.cursor.min.js"></script>
-<script src="js/chart/jqplot.dateAxisRenderer.min.js"></script>
-<script src="js/custom-script.js"></script> -->
-<!-- html5.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!-- css3-mediaqueries.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<!-- <script src="js/ios-orientationchange-fix.js"></script> -->
-
-<!-- Social Connectors scripts -->
-
-<!-- <script type="text/javascript" src="http://platform.linkedin.com/in.js">
-  api_key: h3un6fhxgfif
-  authorize: true
-</script> -->
 </body>
 </html>
