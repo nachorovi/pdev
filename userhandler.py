@@ -84,7 +84,7 @@ def perzouserlist_key(name = 'default'):
 #     (TBD) options: 'facebook', 'google', 'twitter', 'linkedin' check box login options
 #
 class UserRegistrationHandler(webapp2.RequestHandler):
-    def get(self):
+    def post(self):
     
         # Grab the required elements from the request form:
         email = cgi.escape(self.request.get('email'))
@@ -209,7 +209,7 @@ class UserRegistrationHandler(webapp2.RequestHandler):
 #     (TBD) Supports optional two stage login verification (SMS code to your mobile)
 #
 class UserLoginHandler(webapp2.RequestHandler):
-    def get(self):
+    def post(self):
         email = cgi.escape(self.request.get('email'))
         password = cgi.escape(self.request.get('password'))
         rem_me = cgi.escape(self.request.get('rem_me'))

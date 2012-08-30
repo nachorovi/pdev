@@ -52,20 +52,25 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="signuptab">
-          <input type="text" placeholder="First name Last name" class="login-input user-name">
-          <input type="text" placeholder="Email" class="login-input user-email">
-          <input type="text" placeholder="Phone number" class="login-input user-phone">
-          <input type="text" placeholder="Password" class="login-input user-pass">
-          <div class="clearfix">
-          <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
-          </div>
+          <form method="post" action="/userregistrationhandler">
+            <input type="text" name="firstname" placeholder="First name" class="login-input user-name">
+            <input type="text" name="lastname" placeholder="Last name" class="login-input user-name">
+            <input type="text" name="email" placeholder="Email" class="login-input user-email">
+            <input type="text" name="mobile" placeholder="Phone number" class="login-input user-phone">
+            <input type="password" name="pssword" placeholder="Password" class="login-input user-pass">
+            <div class="clearfix">
+              <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
+            </div>
+          </form>
         </div>
         <div class="tab-pane" id="logintab">
-          <input type="text" placeholder="Email" class="login-input user-email">
-          <input type="text" placeholder="Password" class="login-input user-pass">
-          <div class="clearfix">
-          <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
-          </div>
+          <form method="post" action="/userloginhandler">
+            <input type="text" name="email" placeholder="Email" class="login-input user-email">
+            <input type="password" name="password" placeholder="Password" class="login-input user-pass">
+            <div class="clearfix">
+              <button class="btn btn-primary login-btn" type="submit"> Login</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
