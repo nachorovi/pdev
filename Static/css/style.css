@@ -114,6 +114,10 @@ padding: 7px 16px 8px;
   background: #fff;
   padding: 15px;
 }
+#logintab h4 {
+  width: 90px; height: 150px; margin-top: 25px; color: #666; font-weight: 300;
+  float: left; font-size: 25px; line-height: 27px; margin-left: 14px;
+}
 
 /* FOOTER STYLES
 -------------------------------------------------------------------------------- */
@@ -147,9 +151,45 @@ footer p {
 	font-size: 11px; color: #aaa; float:left;
   position: absolute; left: 48%; margin-top: 1px;
 }
+#facebooksignin {
+  background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px 0px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 20px; margin-right: 5px;
+}
+#facebooksignin:hover {
+  background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px -24px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 20px; margin-right: 5px;
+}
+#facebooksignin:active {
+  background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px -48px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 20px; margin-right: 5px;
+}
+#twittersignin {
+  background: url(../img/login_buttons/twitter_signin.png) no-repeat 0px 0px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
+#twittersignin:hover {
+  background: url(../img/login_buttons/twitter_signin.png) no-repeat 0px -24px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
+#twittersignin:active {
+  background: url(../img/login_buttons/twitter_signin.png) no-repeat 0px -48px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
+#linkedinsignin {
+  background: url(../img/login_buttons/linkedin_signin.png) no-repeat 0px 0px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
+#linkedinsignin:hover {
+  background: url(../img/login_buttons/linkedin_signin.png) no-repeat 0px -24px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
+#linkedinsignin:active {
+  background: url(../img/login_buttons/linkedin_signin.png) no-repeat 0px -48px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 4px; margin-right: 5px;
+}
 #facebook {
   background: url(../img/icons4.png) no-repeat -1px -2px; margin-top: -2px;
-  width: 22px; height: 22px; display: block; float: right;
+  width: 22px; height: 22px; display: block; float: right; margin-left: 4px;
 }
 #google {
   background: url(../img/icons4.png) no-repeat -25px -2px; margin-top: -2px;
