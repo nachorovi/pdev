@@ -1,4 +1,4 @@
-application: perzohometest
+application: perzohometesting
 version: 1
 runtime: python27
 api_version: 1
@@ -13,11 +13,11 @@ handlers:
   script: userhandler.app
 
 - url: (.*)/
-  static_files: static\1/index.html
-  upload: static/index.html
+  static_files: Static\1/index.html
+  upload: Static/index.html
   
 - url: /
-  static_dir: static
+  static_dir: Static
   
 libraries:
 - name: webapp2
