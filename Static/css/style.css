@@ -115,8 +115,17 @@ padding: 7px 16px 8px;
   padding: 15px; overflow: hidden !important;
 }
 #logintab h4 {
-  width: 90px; height: 90px; margin-top: 28px; color: #666; font-weight: 300;
+  width: 90px; height: 90px; margin-top: 18px; color: #666; font-weight: 300;
   float: left; font-size: 25px; line-height: 27px; margin-left: 20px;
+}
+#rem_me {
+  margin-top: 10px;
+}
+#forgot {
+  float: right;
+}
+#terms h6 {
+  font-size: 8px; color: #999; text-align: center; margin-top: 3px;
 }
 
 /* FOOTER STYLES
@@ -143,7 +152,7 @@ footer .nav li.divider{
   font-size:14px;
 	color:#777;
 }
-footer .container { height: 20px; width: 910px;
+footer .container { height: 20px; width: 860px;
   margin: 0 auto; padding: 0px; margin-top: 7px; overflow: hidden;
 }
 footer p {
@@ -153,7 +162,7 @@ footer p {
 }
 #facebooksignin {
   background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px 0px;
-  width: 150px; height: 22px; display: block; float: right; margin-top: 20px; margin-right: 5px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 10px; margin-right: 5px;
 }
 #facebooksignin:hover {
   background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px -24px;
@@ -258,7 +267,7 @@ footer p {
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  color: #fff;
 }
 .nav > .pull-right {
   float: right;

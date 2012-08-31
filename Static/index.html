@@ -33,7 +33,7 @@
 <body>
 <header>
   <div class="container">
-  <a id="logo"></a>
+  <a href="#" id="logo"></a>
   </div>
 </header>
 
@@ -53,14 +53,14 @@
       <div class="tab-content">
         <div class="tab-pane active" id="signuptab">
           <form method="post" action="/userregistrationhandler">
-            <input type="text" name="firstname" placeholder="First name" class="login-input user-name">
-            <input type="text" name="lastname" placeholder="Last name" class="login-input user-name">
+            <input type="text" name="name" placeholder="Full name" class="login-input user-name">
             <input type="text" name="email" placeholder="Email" class="login-input user-email">
             <input type="text" name="mobile" placeholder="Phone number" class="login-input user-phone">
             <input type="password" name="pssword" placeholder="Password" class="login-input user-pass">
             <div class="clearfix">
               <button class="btn btn-primary login-btn" type="submit"> Sign up</button>
             </div>
+            <div id="terms"><h6>By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</h6></div>
           </form>
         </div>
         <div class="tab-pane" id="logintab">
@@ -69,6 +69,7 @@
             <input type="password" name="password" placeholder="Password" class="login-input user-pass">
             <div class="clearfix">
               <button class="btn btn-primary login-btn" type="submit">Login</button>
+              <div id="rem_me"><input class="rem_me" type="checkbox" value=""> Remember Me<a id="forgot">Forgot my password</a></div>
             </div>
             <h4>Or sign in with:</h4>
             <div id="facebooksignin"></div>
@@ -85,17 +86,17 @@
 <footer>
 <div class="container">
   <ul class="nav">
-    <li><a href="#">Home</a> </li>
+    <li><a href="../">Home</a> </li>
     <li class="divider">|</li>
-    <li><a href="#">About Us</a> </li>
+    <li><a href="about.html">About Us</a> </li>
     <li class="divider">|</li>
-    <li><a href="#">Jobs</a></li>
+    <li><a href="jobs.html">Jobs</a></li>
     <li class="divider">|</li>
-    <li><a href="#">Blog</a> </li>
+    <li><a href="blog.html">Blog</a> </li>
     <li class="divider">|</li>
-    <li><a href="#">Legal</a></li>
+    <li><a href="legal.html">Legal</a></li>
   </ul>
-  <p>Copyright Perzo 2012</p>
+  <p>&copy; Copyright Perzo 2012</p>
   <a href="#" id="youtube"></a>
   <a href="#" id="twitter"></a>
   <a href="#" id="google"></a>
@@ -110,51 +111,8 @@
 <script src="js/jquery.js"></script>
 <!-- <script src="js/jquery-ui-1.8.16.custom.min.js"></script> -->
 <script src="js/bootstrap.js"></script>
-<!-- <script src="js/prettify.js"></script>
-<script src="js/jquery.sparkline.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/accordion.jquery.js"></script>
-<script src="js/smart-wizard.jquery.js"></script>
-<script src="js/vaidation.jquery.js"></script>
-<script src="js/jquery-dynamic-form.js"></script>
-<script src="js/fullcalendar.js"></script>
-<script src="js/raty.jquery.js"></script>
-<script src="js/jquery.noty.js"></script>
-<script src="js/jquery.cleditor.min.js"></script>
-<script src="js/data-table.jquery.js"></script>
-<script src="js/TableTools.min.js"></script>
-<script src="js/ColVis.min.js"></script>
-<script src="js/plupload.full.js"></script>
-<script src="js/elfinder/elfinder.min.js"></script>
-<script src="js/chosen.jquery.js"></script>
-<script src="js/uniform.jquery.js"></script>
-<script src="js/jquery.tagsinput.js"></script>
-<script src="js/jquery.colorbox-min.js"></script>
-<script src="js/check-all.jquery.js"></script>
-<script src="js/inputmask.jquery.js"></script> -->
-<!-- <script src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script> -->
-<!-- <script src="js/plupupload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
-<script src="js/excanvas.min.js"></script>
-<script src="js/jquery.jqplot.min.js"></script>
-<script src="js/chart/jqplot.highlighter.min.js"></script>
-<script src="js/chart/jqplot.cursor.min.js"></script>
-<script src="js/chart/jqplot.dateAxisRenderer.min.js"></script>
-<script src="js/custom-script.js"></script> -->
-<!-- html5.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!-- css3-mediaqueries.js for IE less than 9 -->
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<!-- <script src="js/ios-orientationchange-fix.js"></script> -->
-
-<!-- Social Connectors scripts -->
-
-<!-- <script type="text/javascript" src="http://platform.linkedin.com/in.js">
-  api_key: h3un6fhxgfif
-  authorize: true
-</script> -->
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jQuery.dPassword.js"></script> 
+<script type="text/javascript"> $(document).ready( function() { $('input:password').dPassword(); }); </script>
 </body>
 </html>
