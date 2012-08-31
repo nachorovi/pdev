@@ -36,12 +36,13 @@ header {
   background: #2c2c2c url(../img/sewn.png) bottom repeat-x;
 }
 header .container {
-  padding:0px; width: 960px; margin: 0 auto;
+  padding:0px; width: 860px; margin: 0 auto;
 }
 header #logo{ 
   background: url(../img/logotype4.png) left center no-repeat; width: 80px; height: 30px;
-  top: 0px; position: relative; left: 25px; cursor: pointer; float: left; display: block;
+  top: 0px; position: relative; left: 0px; cursor: pointer; float: left; display: block;
 }
+header #fblike { float: right; margin-top: 5px }
 header #logo:hover { 
 }
 header nav { padding-top: 8px; margin-top: -2px; margin-left: 0px; /*border-left: 1px solid #7A021E;*/ float: right; display: inline; }
@@ -115,8 +116,18 @@ padding: 7px 16px 8px;
   padding: 15px; overflow: hidden !important;
 }
 #logintab h4 {
-  width: 90px; height: 90px; margin-top: 28px; color: #666; font-weight: 300;
+  width: 90px; height: 90px; margin-top: 18px; color: #666; font-weight: 300;
   float: left; font-size: 25px; line-height: 27px; margin-left: 20px;
+}
+#rem_me {
+  margin-top: 10px;
+  font-size: 13px;
+}
+#forgot {
+  float: right;
+}
+#terms h6 {
+  font-size: 8px; color: #999; text-align: center; margin-top: 3px;
 }
 
 /* FOOTER STYLES
@@ -143,7 +154,7 @@ footer .nav li.divider{
   font-size:14px;
 	color:#777;
 }
-footer .container { height: 20px; width: 910px;
+footer .container { height: 20px; width: 860px;
   margin: 0 auto; padding: 0px; margin-top: 7px; overflow: hidden;
 }
 footer p {
@@ -153,7 +164,7 @@ footer p {
 }
 #facebooksignin {
   background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px 0px;
-  width: 150px; height: 22px; display: block; float: right; margin-top: 20px; margin-right: 5px;
+  width: 150px; height: 22px; display: block; float: right; margin-top: 10px; margin-right: 5px;
 }
 #facebooksignin:hover {
   background: url(../img/login_buttons/facebook_signin.png) no-repeat 0px -24px;
@@ -215,6 +226,69 @@ footer p {
 #youtube:hover {
   background: url(../img/iconshover2.png) no-repeat -73px -2px;
 }
+.logtwit {
+  background: url(../img/social_login2.png) no-repeat 0px 0px; margin-right: 3px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.logface {
+  background: url(../img/social_login2.png) no-repeat -38px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.loggoog {
+  background: url(../img/social_login2.png) no-repeat -76px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.loglink {
+  background: url(../img/social_login2.png) no-repeat -114px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.logtwit:hover {
+  background: url(../img/social_login2h.png) no-repeat 0px 0px; margin-right: 3px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.logface:hover {
+  background: url(../img/social_login2h.png) no-repeat -38px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.loggoog:hover {
+  background: url(../img/social_login2h.png) no-repeat -76px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.loglink:hover {
+  background: url(../img/social_login2h.png) no-repeat -114px 0px; margin-right: 1px;
+  width: 34px; height: 33px; display: block; float: right; margin-top: 2px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+label.error { z-index: 3000; position: absolute; 
+  background: rgba(0, 0, 0, 0.8); padding: 5px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #eee; font-size: 11px;
+}
 
 
 /* TAB STYLES
@@ -258,7 +332,7 @@ footer p {
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  color: #fff;
 }
 .nav > .pull-right {
   float: right;
@@ -575,16 +649,42 @@ footer p {
 
 
 
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
 	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
 	display: inline-block;
 	height: 24px;
 	padding: 4px; padding-left: 28px;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
   font-size: 13px;
 	line-height: 18px;
 	color: #555555;
 	width: 253px;
+}
+select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  display: inline-block;
+  height: 20px;
+  padding: 4px; padding-left: 28px; width: 253px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+
+  line-height: 30px;
+  width: 287px;
+  border: 1px solid #bbb;
+  background-color: #ffffff;
 }
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
 	background-color: #ffffff;
@@ -631,9 +731,12 @@ input[type="radio"], input[type="checkbox"] {
   line-height: normal;
 	cursor: pointer;
 }
+.beta-btn {
+  width: 284px !important;
+}
 .btn {
 	display: inline-block;
- *display: inline; width: 287px;
+ *display: inline; width: 146px;
 	padding: 7px 10px 7px;
 	margin-bottom: 0;
  *margin-left: .3em;
@@ -719,4 +822,91 @@ input[type="radio"], input[type="checkbox"] {
 }
 .btn-primary:active, .btn-primary.active {
 	background-color: #004099 \9;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.tooltip.top {
+  margin-top: -3px;
+}
+.tooltip.right {
+  margin-left: 3px;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+}
+.tooltip.left {
+  margin-left: -3px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000000;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000000;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
 }
